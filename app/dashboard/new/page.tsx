@@ -74,7 +74,7 @@ export default async function NewNoteRoute() {
         </CardContent>
 
         <CardFooter className="flex justify-between">
-          <Button asChild variant="destructive">
+          <Button asChild variant="ghost">
             <Link href="/dashboard">Cancel</Link>
           </Button>
           <SubmitButton />

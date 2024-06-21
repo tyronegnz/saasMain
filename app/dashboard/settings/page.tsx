@@ -68,7 +68,7 @@ export default async function SettingPage() {
       <div className="flex items-center justify-between px-2">
         <div className="grid gap-1">
           <h1 className="text-3xl md:text-4xl">Settings</h1>
-          <p className="text-lg text-muted-foreground">Your Profile settings</p>
+          <p className="text-lg text-muted-foreground">Your profile settings</p>
         </div>
       </div>
 
@@ -77,14 +77,13 @@ export default async function SettingPage() {
           <CardHeader>
             <CardTitle>General Data</CardTitle>
             <CardDescription>
-              Please provide general information about yourself. Please dont
-              forget to save
+              Please provide general information about yourself. Click "Save Now" when done.
             </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-2">
               <div className="space-y-1">
-                <Label>Your Name</Label>
+                <Label>Name</Label>
                 <Input
                   name="name"
                   type="text"
@@ -94,7 +93,7 @@ export default async function SettingPage() {
                 />
               </div>
               <div className="space-y-1">
-                <Label>Your Email</Label>
+                <Label>Email</Label>
                 <Input
                   name="email"
                   type="email"
@@ -106,7 +105,7 @@ export default async function SettingPage() {
               </div>
 
               <div className="space-y-1">
-                <Label>Color Scheme</Label>
+                <Label>Color Theme</Label>
                 <Select name="color" defaultValue={data?.colorScheme}>
                   <SelectTrigger className="w-full">
                     <SelectValue placeholder="Select a color" />

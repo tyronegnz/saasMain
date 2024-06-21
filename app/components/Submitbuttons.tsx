@@ -63,11 +63,11 @@ export function TrashDelete() {
   return (
     <>
       {pending ? (
-        <Button variant={"destructive"} size="icon" disabled>
+        <Button variant={"ghost"} size="icon" disabled>
           <Loader2 className="h-4 w-4 animate-spin" />
         </Button>
       ) : (
-        <Button variant={"destructive"} size="icon" type="submit">
+        <Button variant={"ghost"} size="icon" type="submit">
           <Trash className="h-4 w-4" />
         </Button>
       )}

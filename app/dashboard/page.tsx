@@ -62,17 +62,17 @@ export default async function DashboardPage() {
         <div className="grid gap-1">
           <h1 className="text-3xl md:text-4xl">Your Notes</h1>
           <p className="text-lg text-muted-foreground">
-            Here you can see and create new notes
+            See and manage your notes
           </p>
         </div>
 
         {data?.Subscription?.status === "active" ? (
           <Button asChild>
-            <Link href="/dashboard/new">Create a new Note</Link>
+            <Link href="/dashboard/new">Create a New Note</Link>
           </Button>
         ) : (
           <Button asChild>
-            <Link href="/dashboard/new">Create a new Note</Link>
+            <Link href="/dashboard/new">Create a New Note</Link>
           </Button>
         )}
       </div>
@@ -84,11 +84,10 @@ export default async function DashboardPage() {
           </div>
 
           <h2 className="mt-6 text-xl font-semibold">
-            You dont have any notes created
+            You Haven't Created Any Notes
           </h2>
           <p className="mb-8 mt-2 text-center text-sm leading-6 text-muted-foreground max-w-sm mx-auto">
-            You currently dont have any notes. please create some so that you
-            can see them right here.
+            When you create notes, they will appear here. Create notes by clicking the button below.
           </p>
 
           {data?.Subscription?.status === "active" ? (
