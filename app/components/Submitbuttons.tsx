@@ -31,7 +31,7 @@ export function StripeSubscriptionCreationButton() {
           <Loader2 className="mr-2 w-4 h-4 animate-spin" /> Please Wait
         </Button>
       ) : (
-        <Button type="submit" className="w-full">
+        <Button type="submit" className="w-full hidden">
           Create Subscription
         </Button>
       )}
