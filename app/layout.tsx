@@ -1,3 +1,5 @@
+//
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -6,6 +8,8 @@ import { Navbar } from "./components/Navbar";
 import prisma from "./lib/db";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { unstable_noStore as noStore } from "next/cache";
+import { EdgeStoreProvider } from './lib/edgestore';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,7 +44,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${data?.colorScheme ?? "theme-rose"}`}
+        className={`${inter.className} ${data?.colorScheme ?? "theme-violet"}`}
       >
         <ThemeProvider
           attribute="class"
@@ -55,3 +59,11 @@ export default async function RootLayout({
     </html>
   );
 }
+
+
+
+
+
+
+
+
